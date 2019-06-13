@@ -23,7 +23,9 @@
     "posttest": "markdown-doctest",
     "test": "ava"
   },
-  "dependencies": {},
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
   "devDependencies": {
     "ava": "^2.1.0",
     "c8": "^5.0.1",
