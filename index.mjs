@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+import { fetch } from 'fetch-h2';
 
 export async function npmDepAnalyser(name,version, categorizer) {
 
