@@ -24,7 +24,8 @@
     "test": "ava"
   },
   "dependencies": {
-    "fetch-h2": "^2.2.0"
+    "fetch-h2": "^2.2.0",
+    "pacote": "^9.5.1"
   },
   "devDependencies": {
     "ava": "^2.1.0",
