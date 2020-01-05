@@ -9,7 +9,6 @@
   "main": "index.mjs",
   "module": "index.mjs",
   "description": "analyse npm dependencies",
-  "keywords": [],
   "contributors": [
     {
       "name": "Markus Felten",
