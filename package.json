@@ -21,7 +21,8 @@
     "docs": "documentation readme index.mjs --section=API",
     "lint": "documentation lint index.mjs",
     "posttest": "markdown-doctest",
-    "test": "ava"
+    "test": "ava",
+    "prepare": "rollup -c"
   },
   "dependencies": {
     "fetch-h2": "^2.2.0",
