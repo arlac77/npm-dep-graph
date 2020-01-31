@@ -1,0 +1,10 @@
+{
+  "name": "npm-dep-graph",
+  "description": "analyse npm dependencies",
+  "icons": [
+    {
+      "src": "facicon.ico",
+      "sizes": "16x16"
+    }
+  ]
+}
