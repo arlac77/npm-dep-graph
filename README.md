@@ -6,6 +6,8 @@
 [![Build Status](https://secure.travis-ci.org/arlac77/npm-dep-graph.png)](http://travis-ci.org/arlac77/npm-dep-graph)
 [![Greenkeeper](https://badges.greenkeeper.io/arlac77/npm-dep-graph.svg)](https://greenkeeper.io/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/arlac77/npm-dep-graph)
+[![codecov.io](http://codecov.io/github/arlac77/npm-dep-graph/coverage.svg?branch=master)](http://codecov.io/github/arlac77/npm-dep-graph?branch=master)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Coverage Status](https://coveralls.io/repos/arlac77/npm-dep-graph/badge.svg)](https://coveralls.io/r/arlac77/npm-dep-graph)
 [![Known Vulnerabilities](https://snyk.io/test/github/arlac77/npm-dep-graph/badge.svg)](https://snyk.io/test/github/arlac77/npm-dep-graph)
