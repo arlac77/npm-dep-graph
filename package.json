@@ -50,8 +50,8 @@
   },
   "homepage": "https://github.com/arlac77/npm-dep-graph#readme",
   "config": {
-    "base": "/services/npm-dep-graph/",
     "api": "/services/npm-dep-graph/api",
+    "base": "/services/npm-dep-graph/",
     "proxyTarget": "https://somewhere/"
   },
   "pacman": {
