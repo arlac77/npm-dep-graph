@@ -6,3 +6,6 @@ build
 .DS_Store
 .test
 .tmp
+*.css.map
+*.js.map
+*.mjs.map

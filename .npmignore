@@ -8,3 +8,6 @@ doc
 .travis.yml
 .vscode
 .github
+*.js.map
+*.mjs.map
+*.css.map
