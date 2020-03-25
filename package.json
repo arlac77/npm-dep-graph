@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@semantic-release/exec": "^5.0.0",
-    "ava": "^3.5.0",
+    "ava": "^3.5.1",
     "c8": "^7.1.0",
     "documentation": "^12.1.4",
     "npm-pkgbuild": "^6.11.6",
