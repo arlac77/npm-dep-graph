@@ -31,7 +31,7 @@
   "dependencies": {
     "fetch-h2": "^2.2.0",
     "mf-styling": "arlac77/mf-styling",
-    "pacote": "^9.5.1"
+    "pacote": "^11.1.8"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^8.0.1",
