@@ -8,8 +8,7 @@
   "type": "module",
   "main": "index.mjs",
   "exports": {
-    ".": "index.mjs",
-    "./": "./"
+    ".": "index.mjs"
   },
   "description": "analyse npm dependencies",
   "keywords": [
