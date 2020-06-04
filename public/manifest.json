@@ -10,5 +10,6 @@
       "src": "facicon.ico",
       "sizes": "16x16"
     }
-  ]
+  ],
+  "background_color": "#ffffff"
 }
