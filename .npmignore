@@ -7,7 +7,5 @@ doc
 .tmp
 .travis.yml
 .vscode
+*.map
 .github
-*.js.map
-*.mjs.map
-*.css.map
