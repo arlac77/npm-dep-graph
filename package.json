@@ -49,6 +49,15 @@
     "type": "git",
     "url": "https://github.com/arlac77/npm-dep-graph.git"
   },
+  "bugs": {
+    "url": "https://github.com/arlac77/npm-dep-graph/issues"
+  },
+  "homepage": "https://github.com/arlac77/npm-dep-graph#readme",
+  "config": {
+    "api": "/services/npm-dep-graph/api",
+    "base": "/services/npm-dep-graph/",
+    "proxyTarget": "https://somewhere/"
+  },
   "pacman": {
     "groups": "{{group}}",
     "hooks": "pacman/hooks.sh",
@@ -63,15 +72,6 @@
       },
       "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf"
     }
-  },
-  "bugs": {
-    "url": "https://github.com/arlac77/npm-dep-graph/issues"
-  },
-  "homepage": "https://github.com/arlac77/npm-dep-graph#readme",
-  "config": {
-    "api": "/services/npm-dep-graph/api",
-    "base": "/services/npm-dep-graph/",
-    "proxyTarget": "https://somewhere/"
   },
   "release": {
     "plugins": [
