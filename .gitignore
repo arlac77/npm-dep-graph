@@ -5,7 +5,5 @@ build
 *.node
 .DS_Store
 .test
+*.map
 .tmp
-*.css.map
-*.js.map
-*.mjs.map
