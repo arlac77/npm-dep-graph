@@ -63,7 +63,7 @@
     "hooks": "pacman/hooks.sh",
     "installdir": "/services/npm-dep-graph/frontend",
     "depends": {
-      "systemd": ">=246.4",
+      "systemd": ">=246.5",
       "nginx-mainline": ">=1.19.2"
     },
     "content": {
