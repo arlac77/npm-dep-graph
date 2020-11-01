@@ -42,7 +42,7 @@
     "c8": "^7.3.5",
     "documentation": "^13.1.0",
     "npm-pkgbuild": "^6.12.13",
-    "semantic-release": "^17.2.1"
+    "semantic-release": "^17.2.2"
   },
   "engines": {
     "node": ">=14.15.0"
