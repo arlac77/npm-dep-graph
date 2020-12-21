@@ -39,7 +39,7 @@
     "ava": "^3.14.0",
     "c8": "^7.3.5",
     "documentation": "github:arlac77/documentation",
-    "npm-pkgbuild": "^6.12.16",
+    "npm-pkgbuild": "^6.12.18",
     "semantic-release": "^17.3.0"
   },
   "engines": {
@@ -63,7 +63,7 @@
     "hooks": "pacman/hooks.sh",
     "installdir": "/services/npm-dep-graph/frontend",
     "depends": {
-      "systemd": ">=247.1",
+      "systemd": ">=247.2",
       "nginx-mainline": ">=1.19.3"
     },
     "content": {
