@@ -40,7 +40,7 @@
     "c8": "^7.3.5",
     "documentation": "github:arlac77/documentation",
     "npm-pkgbuild": "^6.12.18",
-    "semantic-release": "^17.3.0"
+    "semantic-release": "^17.3.1"
   },
   "engines": {
     "node": ">=14.15.0"
