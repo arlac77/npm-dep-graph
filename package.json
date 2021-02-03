@@ -39,7 +39,7 @@
     "ava": "^3.15.0",
     "c8": "^7.5.0",
     "documentation": "github:arlac77/documentation",
-    "npm-pkgbuild": "^6.12.22",
+    "npm-pkgbuild": "^6.12.23",
     "semantic-release": "^17.3.7"
   },
   "engines": {
@@ -75,6 +75,7 @@
   },
   "release": {
     "plugins": [
+      "@semantic-release/github",
       [
         "@semantic-release/exec",
         {
@@ -82,7 +83,8 @@
         }
       ],
       "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator"
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm"
     ]
   },
   "template": {
