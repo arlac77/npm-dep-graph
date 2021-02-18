@@ -37,7 +37,7 @@
     "@semantic-release/exec": "^5.0.0",
     "@semantic-release/release-notes-generator": "^9.0.1",
     "ava": "^3.15.0",
-    "c8": "^7.5.0",
+    "c8": "^7.6.0",
     "documentation": "github:arlac77/documentation",
     "npm-pkgbuild": "^6.12.23",
     "semantic-release": "^17.3.9"
