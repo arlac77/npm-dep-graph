@@ -28,7 +28,7 @@
     "lint:docs": "documentation lint ./src/**/*.mjs"
   },
   "dependencies": {
-    "fetch-h2": "^2.2.0",
+    "fetch-h2": "^3.0.0",
     "mf-styling": "arlac77/mf-styling",
     "pacote": "^11.1.8"
   },
