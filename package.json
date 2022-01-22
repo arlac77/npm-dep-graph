@@ -64,7 +64,7 @@
     "installdir": "/services/npm-dep-graph/frontend",
     "depends": {
       "systemd": ">=250.3",
-      "nginx-mainline": ">=1.21.1"
+      "nginx-mainline": ">=1.21.4"
     },
     "content": {
       "${installdir}/": {
