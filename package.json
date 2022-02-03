@@ -39,7 +39,7 @@
     "ava": "^4.0.1",
     "c8": "^7.11.0",
     "documentation": "^13.2.5",
-    "npm-pkgbuild": "^7.25.2",
+    "npm-pkgbuild": "^7.25.5",
     "semantic-release": "^19.0.2"
   },
   "engines": {
@@ -58,21 +58,20 @@
     "base": "/services/npm-dep-graph/",
     "proxyTarget": "https://somewhere/"
   },
-  "pacman": {
-    "groups": "{{group}}",
-    "hooks": "pacman/hooks.sh",
-    "installdir": "/services/npm-dep-graph/frontend",
-    "depends": {
-      "systemd": ">=250.3",
-      "nginx-mainline": ">=1.21.4"
-    },
+  "pkg": {
+    "hooks": "pkg/hooks.sh",
     "content": {
+      "/etc/nginx/sites/common/${name}.conf": "pkg/nginx.conf",
       "${installdir}/": {
-        "base": "public"
-      },
-      "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf",
-      "/etc/nginx/sites/common/${name}.conf": "pacman/nginx.conf"
-    }
+        "base": "public/"
+      }
+    },
+    "depends": {
+      "nginx-mainline": ">=1.21.4",
+      "systemd": ">=250.3"
+    },
+    "groups": "web",
+    "installdir": "/services/npm-dep-graph/frontend"
   },
   "release": {
     "plugins": [
@@ -85,7 +84,13 @@
       ],
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      "@semantic-release/npm"
+      "@semantic-release/npm",
+      [
+        "@semantic-release/exec",
+        {
+          "publishCmd": "npx npm-pkgbuild"
+        }
+      ]
     ]
   },
   "template": {
