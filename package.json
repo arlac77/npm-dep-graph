@@ -59,18 +59,18 @@
     "proxyTarget": "https://somewhere/"
   },
   "pkg": {
-    "hooks": "pkg/hooks.sh",
     "content": {
       "/etc/nginx/sites/common/${name}.conf": "pkg/nginx.conf",
       "${installdir}/": {
         "base": "public/"
       }
     },
+    "hooks": "pkg/hooks.sh",
+    "groups": "web",
     "depends": {
       "nginx-mainline": ">=1.21.4",
       "systemd": ">=250.3"
     },
-    "groups": "web",
     "installdir": "/services/npm-dep-graph/frontend"
   },
   "release": {
