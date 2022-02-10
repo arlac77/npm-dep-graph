@@ -9,3 +9,4 @@ doc
 *.map
 .github
 pkg
+jsconfig.json
