@@ -63,6 +63,10 @@
       "/etc/nginx/sites/common/${name}.conf": "pkg/nginx.conf",
       "${installdir}/": {
         "base": "public/"
+      },
+      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf",
+      "${install.dir}": {
+        "base": "public/"
       }
     },
     "hooks": "pkg/hooks.sh",
@@ -71,6 +75,7 @@
       "nginx-mainline": ">=1.21.4",
       "systemd": ">=250.4"
     },
+    "install.dir": "/services/npm-dep-graph/frontend/",
     "installdir": "/services/npm-dep-graph/frontend"
   },
   "release": {
