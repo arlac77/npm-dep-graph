@@ -5,9 +5,6 @@
     "access": "public"
   },
   "sideEffects": false,
-  "exports": {
-    ".": "index.mjs"
-  },
   "description": "analyse npm dependencies",
   "keywords": [
     "web"
@@ -60,8 +57,8 @@
   },
   "pkg": {
     "content": {
-      "/etc/nginx/sites/common/${name}.conf": "pkg/nginx.conf",
-      "${installdir}/": {
+      "${ngins.sites.dir}${name}.conf": "pkg/nginx.conf",
+      "${install.dir}": {
         "base": "public/"
       }
     },
@@ -71,19 +68,13 @@
       "nginx-mainline": ">=1.21.4",
       "systemd": ">=250.4"
     },
-    "installdir": "/services/npm-dep-graph/frontend"
+    "install.dir": "/services/${name}/frontend/"
   },
   "release": {
     "plugins": [
-      "@semantic-release/github",
-      [
-        "@semantic-release/exec",
-        {
-          "publishCmd": "npx npm-pkgbuild --pkgver ${nextRelease.version} pkgbuild pacman makepkg"
-        }
-      ],
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
       "@semantic-release/npm",
       [
         "@semantic-release/exec",
