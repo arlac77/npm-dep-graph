@@ -65,9 +65,8 @@
       "nginx-mainline": ">=1.21.4",
       "systemd": ">=250.4"
     },
-    "install.dir": "/services/${name}/frontend/",
-    "http.base.path": "/services/${name}"
-
+    "http.base.path": "/services/${name}",
+    "install.dir": "/services/${name}/frontend/"
   },
   "release": {
     "plugins": [
