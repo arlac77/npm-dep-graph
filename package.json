@@ -39,9 +39,6 @@
     "npm-pkgbuild": "^8.3.16",
     "semantic-release": "^19.0.2"
   },
-  "engines": {
-    "node": ">=14.15.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/arlac77/npm-dep-graph.git"
@@ -68,7 +65,9 @@
       "nginx-mainline": ">=1.21.4",
       "systemd": ">=250.4"
     },
-    "install.dir": "/services/${name}/frontend/"
+    "install.dir": "/services/${name}/frontend/",
+    "http.base.path": "/services/${name}"
+
   },
   "release": {
     "plugins": [
