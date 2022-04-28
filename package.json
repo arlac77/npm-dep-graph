@@ -37,7 +37,7 @@
     "ava": "^4.2.0",
     "c8": "^7.11.2",
     "documentation": "^13.2.5",
-    "npm-pkgbuild": "^10.0.0",
+    "npm-pkgbuild": "^10.0.1",
     "semantic-release": "^19.0.2",
     "stylelint": "^14.8.0",
     "stylelint-config-standard": "^25.0.0"
@@ -55,7 +55,7 @@
     "base": "/services/npm-dep-graph/",
     "proxyTarget": "https://somewhere/"
   },
-  "pkg": {
+  "pkgbuild": {
     "content": {
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf",
       "${install.dir}": {
@@ -68,13 +68,18 @@
       "nginx-mainline": ">=1.21.4",
       "systemd": ">=250.4"
     },
-    "http.base.path": "/services/${name}",
-    "install.dir": "/services/${name}/frontend/"
+    "install.dir": "/services/npm-dep-graph/frontend/"
   },
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/exec",
+        {
+          "publishCmd": "npx npm-pkgbuild --verbose"
+        }
+      ],
       "@semantic-release/github",
       "@semantic-release/npm",
       [
@@ -95,7 +100,20 @@
       "arlac77/template-web-app"
     ]
   },
-  "pkgbuild": {
-    "content": {}
+  "pkg": {
+    "content": {
+      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf",
+      "${install.dir}": {
+        "base": "public/"
+      }
+    },
+    "hooks": "pkg/hooks.sh",
+    "groups": "web",
+    "depends": {
+      "nginx-mainline": ">=1.21.4",
+      "systemd": ">=250.4"
+    },
+    "http.base.path": "/services/${name}",
+    "install.dir": "/services/${name}/frontend/"
   }
 }
