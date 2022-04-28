@@ -55,7 +55,7 @@
     "base": "/services/npm-dep-graph/",
     "proxyTarget": "https://somewhere/"
   },
-  "pkg": {
+  "pkgbuild": {
     "content": {
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf",
       "${install.dir}": {
@@ -68,8 +68,7 @@
       "nginx-mainline": ">=1.21.4",
       "systemd": ">=250.4"
     },
-    "http.base.path": "/services/${name}",
-    "install.dir": "/services/${name}/frontend/"
+    "install.dir": "/services/npm-dep-graph/frontend/"
   },
   "release": {
     "plugins": [
@@ -95,7 +94,20 @@
       "arlac77/template-web-app"
     ]
   },
-  "pkgbuild": {
-    "content": {}
+  "pkg": {
+    "content": {
+      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf",
+      "${install.dir}": {
+        "base": "public/"
+      }
+    },
+    "hooks": "pkg/hooks.sh",
+    "groups": "web",
+    "depends": {
+      "nginx-mainline": ">=1.21.4",
+      "systemd": ">=250.4"
+    },
+    "http.base.path": "/services/${name}",
+    "install.dir": "/services/${name}/frontend/"
   }
 }
