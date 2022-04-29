@@ -87,7 +87,6 @@
           "publishCmd": "npx npm-pkgbuild --verbose"
         }
       ],
-      "@semantic-relese/github",
       "@semantic-release/github"
     ]
   },
