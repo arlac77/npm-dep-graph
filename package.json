@@ -7,6 +7,7 @@
   "sideEffects": false,
   "description": "analyse npm dependencies",
   "keywords": [
+    "vite",
     "web"
   ],
   "contributors": [
@@ -17,13 +18,16 @@
   ],
   "license": "BSD-2-Clause",
   "scripts": {
+    "prepare": "vite build",
     "test": "npm run test:ava",
     "test:ava": "ava --timeout 2m tests/*.mjs",
     "cover": "c8 -x 'tests/**/*' --temp-directory build/tmp ava --timeout 2m tests/*.mjs && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
     "docs": "documentation readme --section=API ./src/**/*.mjs",
     "lint": "npm run lint:docs && npm run lint:css",
     "lint:docs": "documentation lint ./src/**/*.mjs",
-    "lint:css": "stylelint ./src/*.css"
+    "lint:css": "stylelint ./src/*.css",
+    "dev": "vite",
+    "serve": "vite preview"
   },
   "dependencies": {
     "mf-styling": "^1.0.0",
@@ -36,13 +40,14 @@
     "ava": "^4.2.0",
     "c8": "^7.11.2",
     "documentation": "^13.2.5",
-    "npm-pkgbuild": "^10.0.1",
+    "npm-pkgbuild": "^10.0.2",
     "semantic-release": "^19.0.2",
     "stylelint": "^14.8.1",
-    "stylelint-config-standard": "^25.0.0"
+    "stylelint-config-standard": "^25.0.0",
+    "vite": "^2.9.6"
   },
   "optionalDependencies": {
-  	"mf-hosting" : "^1.0.0"
+    "mf-hosting": "^1.0.0"
   },
   "repository": {
     "type": "git",
@@ -52,6 +57,9 @@
     "url": "https://github.com/arlac77/npm-dep-graph/issues"
   },
   "homepage": "https://github.com/arlac77/npm-dep-graph#readme",
+  "config": {
+    "base": "/services/npm-dep-graph"
+  },
   "pkgbuild": {
     "content": {
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf",
@@ -79,7 +87,8 @@
           "publishCmd": "npx npm-pkgbuild --verbose"
         }
       ],
-      "@semantic-relese/github"
+      "@semantic-relese/github",
+      "@semantic-release/github"
     ]
   },
   "template": {
