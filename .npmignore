@@ -10,3 +10,4 @@ doc
 .github
 pkg
 jsconfig.json
+.stylelintrc.json
