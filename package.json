@@ -39,7 +39,7 @@
     "documentation": "^13.2.5",
     "npm-pkgbuild": "^10.0.1",
     "semantic-release": "^19.0.2",
-    "stylelint": "^14.8.0",
+    "stylelint": "^14.8.1",
     "stylelint-config-standard": "^25.0.0"
   },
   "optionalDependencies": {
