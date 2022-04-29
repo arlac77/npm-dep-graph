@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "fetch-h2": "^3.0.0",
-    "mf-styling": "arlac77/mf-styling",
+    "mf-styling": "^1.0.0",
     "pacote": "^13.0.0"
   },
   "devDependencies": {
@@ -42,6 +42,9 @@
     "stylelint": "^14.8.0",
     "stylelint-config-standard": "^25.0.0"
   },
+  "optionalDependencies": {
+  	"mf-hosting" : "^1.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/arlac77/npm-dep-graph.git"
@@ -50,11 +53,6 @@
     "url": "https://github.com/arlac77/npm-dep-graph/issues"
   },
   "homepage": "https://github.com/arlac77/npm-dep-graph#readme",
-  "config": {
-    "api": "/services/npm-dep-graph/api",
-    "base": "/services/npm-dep-graph/",
-    "proxyTarget": "https://somewhere/"
-  },
   "pkgbuild": {
     "content": {
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf",
@@ -82,13 +80,7 @@
           "publishCmd": "npx npm-pkgbuild --verbose"
         }
       ],
-      "@semantic-release/github",
-      [
-        "@semantic-release/exec",
-        {
-          "publishCmd": "npx npm-pkgbuild"
-        }
-      ]
+      "@semantic-relese/github"
     ]
   },
   "template": {
@@ -98,7 +90,8 @@
       "arlac77/template-nginx",
       "arlac77/template-pacman",
       "arlac77/template-systemd",
-      "arlac77/template-web-app"
+      "arlac77/template-web-app",
+      "arlac77/template-vite"
     ]
   }
 }
