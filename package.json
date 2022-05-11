@@ -30,7 +30,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "mf-styling": "^1.0.0",
+    "mf-styling": "^1.0.14",
     "pacote": "^13.3.0"
   },
   "devDependencies": {
@@ -47,7 +47,7 @@
     "vite": "^2.9.9"
   },
   "optionalDependencies": {
-    "mf-hosting": "^1.1.0"
+    "mf-hosting": "^1.1.2"
   },
   "repository": {
     "type": "git",
