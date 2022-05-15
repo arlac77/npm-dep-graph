@@ -9,5 +9,4 @@ doc
 *.map
 .github
 pkg
-jsconfig.json
 .stylelintrc.json
