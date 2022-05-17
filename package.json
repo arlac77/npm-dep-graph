@@ -61,15 +61,11 @@
     "content": {
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf",
       "${install.dir}": {
-        "base": "public/"
+        "base": "build"
       }
     },
     "hooks": "pkg/hooks.sh",
-    "groups": "web",
-    "depends": {
-      "nginx-mainline": ">=1.21.4",
-      "systemd": ">=250.5"
-    }
+    "groups": "web"
   },
   "release": {
     "plugins": [
@@ -91,7 +87,6 @@
       "arlac77/template-esm-only",
       "arlac77/template-nginx",
       "arlac77/template-pacman",
-      "arlac77/template-systemd",
       "arlac77/template-web-app",
       "arlac77/template-vite"
     ]
