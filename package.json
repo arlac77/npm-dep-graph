@@ -57,9 +57,6 @@
     "url": "https://github.com/arlac77/npm-dep-graph/issues"
   },
   "homepage": "https://github.com/arlac77/npm-dep-graph#readme",
-  "config": {
-    "base": "/services/npm-dep-graph"
-  },
   "pkgbuild": {
     "content": {
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf",
@@ -72,21 +69,13 @@
     "depends": {
       "nginx-mainline": ">=1.21.4",
       "systemd": ">=250.5"
-    },
-    "http.base.path": "/services/${name}",
-    "install.dir": "/services/${name}/frontend/"
+    }
   },
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/npm",
-      [
-        "@semantic-release/exec",
-        {
-          "publishCmd": "npx npm-pkgbuild --verbose"
-        }
-      ],
       [
         "@semantic-release/exec",
         {
