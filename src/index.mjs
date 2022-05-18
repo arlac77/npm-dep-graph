@@ -1,11 +1,8 @@
-import pacote from "pacote";
+import {manifest} from "pacote";
 
 export async function npmDepAnalyser(name, version, categorizer) {
-  const pkg = await pacote.manifest("pacote@^1");
-
-  /*
-    const result = await fetch(`https://registry.npmjs.org/${name}`);
-    const pkg = await result.json();
-    */
+  const pkg = await manifest(`${name}@${version}`);
   console.log(pkg);
 }
+
+npmDepAnalyser("pacote","^1");
