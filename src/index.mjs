@@ -1,7 +1,7 @@
-import {manifest} from "pacote";
+import pacote from "pacote";
 
 export async function npmDepAnalyser(name, version, categorizer) {
-  const pkg = await manifest(`${name}@${version}`);
+  const pkg = await pacote.manifest(`${name}@${version}`);
   console.log(pkg);
 }
 
