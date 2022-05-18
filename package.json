@@ -40,7 +40,7 @@
     "ava": "^4.2.0",
     "c8": "^7.11.3",
     "documentation": "^13.2.5",
-    "npm-pkgbuild": "^10.7.5",
+    "npm-pkgbuild": "^10.7.6",
     "semantic-release": "^19.0.2",
     "stylelint": "^14.8.2",
     "stylelint-config-standard": "^25.0.0",
@@ -57,6 +57,9 @@
     "url": "https://github.com/arlac77/npm-dep-graph/issues"
   },
   "homepage": "https://github.com/arlac77/npm-dep-graph#readme",
+  "config": {
+    "base": "/services/npm-dep-graph"
+  },
   "pkgbuild": {
     "content": {
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf",
@@ -65,7 +68,11 @@
       }
     },
     "hooks": "pkg/hooks.sh",
-    "groups": "web"
+    "groups": "web",
+    "depends": {
+      "nginx-mainline": ">=1.21.4"
+    },
+    "install.dir": "/services/npm-dep-graph/frontend/"
   },
   "release": {
     "plugins": [
