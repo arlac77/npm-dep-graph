@@ -1,5 +1,5 @@
 import test from 'ava';
-import { npmDepAnalyser } from '../index.mjs';
+import { npmDepAnalyser } from '../src/index.mjs';
 
 
 test('simple', async t => {
