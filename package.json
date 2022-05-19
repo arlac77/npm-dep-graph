@@ -4,7 +4,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "sideEffects": false,
   "description": "analyse npm dependencies",
   "keywords": [
     "vite",
@@ -84,8 +83,6 @@
   "template": {
     "inheritFrom": [
       "arlac77/template-arlac77-github",
-      "arlac77/template-esm-only",
-      "arlac77/template-nginx",
       "arlac77/template-pacman",
       "arlac77/template-web-app",
       "arlac77/template-vite"
