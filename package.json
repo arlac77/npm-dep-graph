@@ -4,6 +4,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "sideEffects": false,
   "description": "analyse npm dependencies",
   "keywords": [
     "vite",
@@ -64,7 +65,11 @@
       }
     },
     "hooks": "pkg/hooks.sh",
-    "groups": "web"
+    "groups": "web",
+    "depends": {
+      "nginx-mainline": ">=1.21.4"
+    },
+    "install.dir": "/services/npm-dep-graph/frontend/"
   },
   "release": {
     "plugins": [
