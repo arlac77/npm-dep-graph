@@ -66,10 +66,7 @@
     },
     "hooks": "pkg/hooks.sh",
     "groups": "web",
-    "depends": {
-      "nginx-mainline": ">=1.21.4"
-    },
-    "install.dir": "/services/npm-dep-graph/frontend/"
+    "install.dir": "${install.base.dir}${name}/frontend/"
   },
   "release": {
     "plugins": [
