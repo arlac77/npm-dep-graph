@@ -60,9 +60,7 @@
   "pkgbuild": {
     "content": {
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf",
-      "${install.dir}": {
-        "base": "build"
-      }
+      "${install.dir}": "build/"
     },
     "hooks": "pkg/hooks.sh",
     "groups": "web",
