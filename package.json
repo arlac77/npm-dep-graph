@@ -64,7 +64,8 @@
     },
     "hooks": "pkg/hooks.sh",
     "groups": "web",
-    "install.dir": "${install.base.dir}${name}/frontend/"
+    "install.dir": "${install.base.dir}${name}/frontend/",
+    "install.sub.dir": "/frontend/"
   },
   "release": {
     "plugins": [
