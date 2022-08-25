@@ -30,7 +30,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "mf-styling": "^1.5.5",
+    "mf-styling": "^1.7.2",
     "pacote": "^13.6.1"
   },
   "devDependencies": {
