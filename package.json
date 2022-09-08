@@ -63,8 +63,7 @@
       "${install.dir}": "build/"
     },
     "hooks": "pkg/hooks.sh",
-    "groups": "web",
-    "install.sub.dir": "/frontend/"
+    "groups": "examples"
   },
   "release": {
     "plugins": [
