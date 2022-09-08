@@ -20,8 +20,9 @@
   "scripts": {
     "prepare": "vite build",
     "start": "vite",
-    "test": "npm run test:ava",
+    "test": "npm run test:ava && npm run test:cafe",
     "test:ava": "ava --timeout 2m tests/*.mjs",
+    "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --page-request-timeout 3000 --app-init-delay 3000 --app \"vite preview\"",
     "cover": "c8 -x 'tests/**/*' --temp-directory build/tmp ava --timeout 2m tests/*.mjs && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
     "docs": "documentation readme --section=API ./src/**/*.mjs",
     "lint": "npm run lint:docs && npm run lint:css",
@@ -44,6 +45,7 @@
     "semantic-release": "^19.0.5",
     "stylelint": "^14.11.0",
     "stylelint-config-standard": "^28.0.0",
+    "testcafe": "^2.0.0",
     "vite": "^3.1.0"
   },
   "optionalDependencies": {
@@ -81,10 +83,11 @@
   },
   "template": {
     "inheritFrom": [
-      "arlac77/template-arlac77-github",
+      "arlac77/template-css",
       "arlac77/template-pacman",
-      "arlac77/template-web-app",
-      "arlac77/template-vite"
+      "arlac77/template-testcafe",
+      "arlac77/template-vite",
+      "arlac77/template-web-app"
     ]
   }
 }
