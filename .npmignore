@@ -8,3 +8,4 @@ doc
 .github
 pkg
 .stylelintrc.json
+dist
