@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "mf-styling": "^1.7.32",
-    "pacote": "^15.0.3"
+    "pacote": "^15.0.8"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^9.0.2",
