@@ -53,7 +53,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arlac77/npm-dep-graph.git"
+    "url": "https://github.com/arlac77/npm-dep-graph"
   },
   "bugs": {
     "url": "https://github.com/arlac77/npm-dep-graph/issues"
