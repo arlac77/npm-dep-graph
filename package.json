@@ -49,7 +49,7 @@
     "vite": "^4.0.4"
   },
   "optionalDependencies": {
-    "mf-hosting": "^1.8.2"
+    "mf-hosting-frontend": "^1.0.3"
   },
   "repository": {
     "type": "git",
@@ -65,7 +65,8 @@
       "${install.dir}": "build/"
     },
     "hooks": "pkg/hooks.sh",
-    "groups": "examples"
+    "example": true,
+    "frontend": true
   },
   "release": {
     "plugins": [
