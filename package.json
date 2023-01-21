@@ -60,7 +60,8 @@
   "homepage": "https://github.com/arlac77/npm-dep-graph#readme",
   "pkgbuild": {
     "content": {
-      "${install.dir}": "build/"
+      "${install.dir}": "build/",
+      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     },
     "frontend": true
   },
