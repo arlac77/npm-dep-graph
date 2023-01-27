@@ -62,7 +62,8 @@
     "content": {
       "${install.dir}": "build/"
     },
-    "frontend": true
+    "frontend": true,
+    "example": true
   },
   "release": {
     "plugins": [
