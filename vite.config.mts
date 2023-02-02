@@ -2,9 +2,13 @@ import { defineConfig } from "vite";
 import { extractFromPackage } from "npm-pkgbuild";
 
 export default defineConfig(async ({ command, mode }) => {
-  const res = extractFromPackage({
-    dir: new URL("./", import.meta.url).pathname
-  });
+  const res = extractFromPackage(
+    {
+      dir: new URL("./", import.meta.url).pathname,
+      mode
+    },
+    process.env
+  );
   const first = await res.next();
   const pkg = first.value;
   const properties = pkg.properties;
@@ -15,13 +19,10 @@ export default defineConfig(async ({ command, mode }) => {
   process.env["VITE_DESCRIPTION"] = properties.description;
   process.env["VITE_VERSION"] = properties.version;
 
-  const open = process.env.CI ? {} : { open: base };
-
   return {
     base,
     root: "src",
-    worker: { format: "es" },
-    server: { host: true, ...open },
+    server: { host: true },
     build: {
       outDir: "../build",
       target: "esnext",
