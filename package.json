@@ -44,7 +44,7 @@
     "semantic-release": "^21.0.1",
     "stylelint": "^15.5.0",
     "stylelint-config-standard": "^33.0.0",
-    "testcafe": "^2.5.0",
+    "testcafe": "^15.1.317922",
     "vite": "^4.2.2"
   },
   "optionalDependencies": {
