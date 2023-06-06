@@ -42,7 +42,7 @@
     "documentation": "^14.0.2",
     "npm-pkgbuild": "^11.8.6",
     "semantic-release": "^21.0.3s",
-    "stylelint": "^15.6.3",
+    "stylelint": "^15.7.0",
     "stylelint-config-standard": "^33.0.0",
     "testcafe": "^2.6.2",
     "vite": "^4.3.9"
