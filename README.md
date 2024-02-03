@@ -2,7 +2,7 @@
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![bundlejs](https://deno.bundlejs.com/?q=npm-dep-graph\&badge=detailed)](https://bundlejs.com/?q=npm-dep-graph)
 [![downloads](http://img.shields.io/npm/dm/npm-dep-graph.svg?style=flat-square)](https://npmjs.org/package/npm-dep-graph)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/arlac77/npm-dep-graph)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](git+https://github.com/arlac77/npm-dep-graph.git)
 [![Tested with TestCafe](https://img.shields.io/badge/tested%20with-TestCafe-2fa4cf.svg)](https://github.com/DevExpress/testcafe)
 
 # API
