@@ -1,5 +1,5 @@
 name: CI
-'on':
+"on":
   push:
     branches:
       - master
@@ -8,6 +8,8 @@ name: CI
     branches:
       - master
       - next
+permissions:
+  contents: read    
 jobs:
   test:
     runs-on: ${{ matrix.os }}
@@ -65,7 +67,7 @@ jobs:
       - run: npm ci
       - run: npx semantic-release
         env:
-          CI: 'true'
+          CI: "true"
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PKGBUILD_PUBLISH: ${{ secrets.PKGBUILD_PUBLISH }}
@@ -75,5 +77,3 @@ jobs:
       issues: write
       pull-requests: write
       id-token: write
-permissions:
-  contents: read
