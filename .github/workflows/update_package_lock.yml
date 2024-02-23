@@ -2,6 +2,9 @@ name: Update package lock
 'on':
   schedule:
     - cron: 13 8 * * 6
+  push:
+    paths:
+      - package.json
 jobs:
   update_package_lock:
     runs-on: ubuntu-latest
@@ -20,7 +23,7 @@ jobs:
       - run: npm install-test
         env:
           BROWSER: ${{ matrix.browser }}
-      - uses: gr2m/create-or-update-pull-request-action@v1
+      - uses: gr2m/create-or-update-pull-request-action@v1.9.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
