@@ -118,6 +118,7 @@
     "inheritFrom": [
       "arlac77/template-css",
       "arlac77/template-documentation",
+      "arlac77/template-javascript-component",
       "arlac77/template-npm-pkgbuild",
       "arlac77/template-testcafe",
       "arlac77/template-vite",
