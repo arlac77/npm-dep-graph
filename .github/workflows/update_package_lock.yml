@@ -11,7 +11,6 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 20.12.1
           - 20.12.2
         browser:
           - chrome
@@ -21,6 +20,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: rm package-lock.json
+      - run: npx playwright install
       - run: npm install-test
         env:
           BROWSER: ${{ matrix.browser }}
