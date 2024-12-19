@@ -1,5 +1,5 @@
 [![npm](https://img.shields.io/npm/v/npm-dep-graph.svg)](https://www.npmjs.com/package/npm-dep-graph)
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://spdx.org/licenses/0BSD.html)
 [![bundlejs](https://deno.bundlejs.com/?q=npm-dep-graph\&badge=detailed)](https://bundlejs.com/?q=npm-dep-graph)
 [![downloads](http://img.shields.io/npm/dm/npm-dep-graph.svg?style=flat-square)](https://npmjs.org/package/npm-dep-graph)
 [![GitHub Issues](https://img.shields.io/github/issues/arlac77/npm-dep-graph.svg?style=flat-square)](https://github.com/arlac77/npm-dep-graph/issues)
