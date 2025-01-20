@@ -47,7 +47,7 @@
     "stylelint": "^16.13.2",
     "stylelint-config-standard": "^37.0.0",
     "testcafe": "^3.7.1",
-    "vite": "^6.0.7"
+    "vite": "^6.0.9"
   },
   "optionalDependencies": {
     "mf-hosting-frontend": "^3.8.3"
