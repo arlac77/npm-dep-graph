@@ -18,7 +18,7 @@ jobs:
         os:
           - ubuntu-latest
         node-version:
-          - 22.14.0
+          - 22.15.0
         browser:
           - chrome
           - firefox
@@ -101,6 +101,6 @@ jobs:
       - name: prepare node
         uses: actions/setup-node@v4.4.0
         with:
-          node-version: 22.14.0
+          node-version: 22.15.0
           cache: npm
           cache-dependency-path: package-lock.json
