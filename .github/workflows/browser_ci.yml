@@ -49,8 +49,6 @@ jobs:
         uses: actions/setup-node@v6.0.0
         with:
           node-version: ${{ matrix.node-version }}
-          cache: npm
-          cache-dependency-path: package-lock.json
       - name: npm install
         run: npm cit
         env:
@@ -103,5 +101,3 @@ jobs:
         uses: actions/setup-node@v6.0.0
         with:
           node-version: 24.11.1
-          cache: npm
-          cache-dependency-path: package-lock.json
