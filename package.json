@@ -60,7 +60,7 @@
   "bugs": {
     "url": "https://github.com/arlac77/npm-dep-graph/issues"
   },
-  "homepage": "https://github.com/arlac77/npm-dep-graph#readme",
+  "homepage": "",
   "pkgbuild": {
     "content": {
       "${install.dir}": "build/"
