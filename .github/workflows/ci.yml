@@ -16,8 +16,7 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 22.17.1
-          - 24.5.0
+          - 24.11.1
     steps:
       - name: checkout
         uses: actions/checkout@v6.0.0
@@ -53,7 +52,7 @@ jobs:
       - name: prepare node
         uses: actions/setup-node@v6.0.0
         with:
-          node-version: 22.17.1
+          node-version: 24.11.1
           cache: npm
           cache-dependency-path: package-lock.json
       - name: install
