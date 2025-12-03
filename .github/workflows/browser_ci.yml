@@ -46,7 +46,7 @@ jobs:
           retention-days: 3
         if: always()
       - name: prepare node
-        uses: actions/setup-node@v6.0.0
+        uses: actions/setup-node@v6.1.0
         with:
           node-version: ${{ matrix.node-version }}
       - name: npm install
@@ -97,6 +97,6 @@ jobs:
           PKGBUILD_PUBLISH: ${{ secrets.PKGBUILD_PUBLISH }}
           PKGEXT: .pkg.tar.xz
       - name: prepare node
-        uses: actions/setup-node@v6.0.0
+        uses: actions/setup-node@v6.1.0
         with:
           node-version: 24.11.1
