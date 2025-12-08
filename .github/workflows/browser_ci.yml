@@ -47,7 +47,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
-          cache-dependency-path: package-lock.json
       - uses: actions/upload-artifact@v5
         with:
           name: screenshots-${{ matrix.browser }}
@@ -99,4 +98,3 @@ jobs:
         with:
           node-version: 24.11.1
           cache: npm
-          cache-dependency-path: package-lock.json
