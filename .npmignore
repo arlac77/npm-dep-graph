@@ -6,6 +6,7 @@ doc
 .vscode
 *.map
 .github
+vite.config.mts
 pkg
 .stylelintrc.json
 dist
