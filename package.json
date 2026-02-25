@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "mf-styling": "^3.3.9",
-    "pacote": "^21.3.1"
+    "pacote": "^21.4.0"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^13.0.1",
