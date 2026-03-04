@@ -29,7 +29,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v6.0.2
       - name: prepare node
-        uses: actions/setup-node@v6.2.0
+        uses: actions/setup-node@v6.3.0
         with:
           node-version: ${{ matrix.node-version }}
       - name: install npm
@@ -49,7 +49,7 @@ jobs:
           path: ${{ github.workspace }}/build/test/**/*
           retention-days: 3
         if: always()
-      - uses: actions/setup-node@v6.2.0
+      - uses: actions/setup-node@v6.3.0
         with:
           node-version: ${{ matrix.node-version }}
       - uses: browser-actions/setup-firefox@latest
@@ -71,7 +71,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v6.0.2
       - name: prepare node
-        uses: actions/setup-node@v6.2.0
+        uses: actions/setup-node@v6.3.0
         with:
           node-version: 24.14.0
       - name: install
@@ -93,6 +93,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PKGBUILD_PUBLISH: ${{ secrets.PKGBUILD_PUBLISH }}
           PKGEXT: .pkg.tar.xz
-      - uses: actions/setup-node@v6.2.0
+      - uses: actions/setup-node@v6.3.0
         with:
           node-version: 24.11.1
