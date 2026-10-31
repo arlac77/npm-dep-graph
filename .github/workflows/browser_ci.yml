@@ -31,6 +31,7 @@ jobs:
           - 26.10.0
           - 26.12.0
           - 26.12.1
+          - 26.13.0
         browser:
           - chrome
           - firefox
@@ -84,7 +85,7 @@ jobs:
       - name: prepare node
         uses: actions/setup-node@v7.1.0
         with:
-          node-version: 26.12.1
+          node-version: 26.13.0
       - name: install
         run: npm ci
       - name: install dependencies
